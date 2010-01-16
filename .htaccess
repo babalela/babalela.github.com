@@ -1,0 +1,4 @@
+Options +MultiViews
+ 
+# Custom Error pages
+ErrorDocument 404 /404
