@@ -1,0 +1,76 @@
+body {
+	background: #003e85 url(../images/background.png) repeat;
+	color: #cccccc;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	line-height: 1.3em;
+}
+
+a {
+	color: #b7ff4e;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fcff4a;
+}
+
+h2 {
+	font: italic bold 2.3em Candara, Georgia, serif;
+}
+
+.grapevine_credit {
+	font-size: smaller;
+}
+
+.post h2 {
+	color: #35ccff;
+}
+
+#navigation {
+	padding: 20px;
+	float: left;
+	width: 269px;
+}
+
+#navigation h1 {
+	background-image: url(../images/babalela.png);
+	width: 269px;
+	height: 64px;
+}
+
+#navigation h1 a {
+	width: 315px;
+	height: 108px;
+	display: block;
+}
+
+#navigation h1 a span {
+	display: none;
+}
+
+#content {
+	padding: 20px;
+	float: left;
+	width: 500px;
+}
+
+#content p {
+	padding-bottom: 1em;
+}
+
+
+#sidebar {
+	float: left;
+	width: 160px;
+	padding: 20px;
+	font-size: 0.75em;
+	line-height: 1.3em;
+}
+
+#sidebar a {
+	color: #35ccff;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}

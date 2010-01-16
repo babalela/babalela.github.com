@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-		<title>{{ site.site_name }} {{ page.title }}</title>
+		<title>{{ page.title }} &isin; {{ site.site_name }}</title>
  
 		<link rel="shortcut icon" href="/favicon.ico" />
  
@@ -20,7 +20,13 @@
 		{% include navigation.html %}
 
 		<div id="content">
-			{{ content }}
+			<div class="post">
+				<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+				<span class="author">{{ page.author }}</span> on <span class="date">{{ page.date | date: "%d %B %Y" }}</span><br />
+				<br />			
+				<br />			
+				{{ content }}
+			</div>
 		</div>
 
 		{% include grapevine.html %}

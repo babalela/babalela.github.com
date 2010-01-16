@@ -1,7 +1,16 @@
 ---
 xhtml_id: index
-title: "- Thoughts on freelancing and small business in Zambia."
 layout: base
+title: "- Thoughts on freelancing and small business in Zambia."
 ---
 
-<h1>Babalela</h1>
+{% for post in site.posts limit: 7 %}
+	<div class="post">
+		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<span class="author">{{ post.author }}</span> on <span class="date">{{ post.date | date: "%d %B %Y" }}</span><br />
+		<br />
+		<br />
+	
+	  {{ post.content }}
+	</div><!-- /post -->
+{% endfor %}
