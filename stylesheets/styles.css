@@ -4,57 +4,16 @@ body {
 	line-height: 1.3em;
 	margin: 0;
 	border: 0;
-	padding: 0;
+	padding: 100px;
 }
 
 a {
-	color: #007cff;
+	color: #333333;
+	font-weight: bold;
 	text-decoration: none;
 }
-
-a:hover {
-	background-color: #fcff4a;
-}
-
 
 h1 {
 	font-size: 4em;
 	line-height: 1.3em;
-}
-
-h2 {
-	font-size: 2.5em;
-	line-height: 1.3em;
-}
-
-.grapevine_credit {
-	font-size: smaller;
-}
-
-#navigation {
-	float: left;
-	width: 300px;
-}
-
-#content {
-	padding: 20px;
-	float: left;
-	width: 500px;
-}
-
-#content p {
-	padding-bottom: 1em;
-}
-
-
-#sidebar {
-	float: left;
-	width: 202px;
-	padding: 20px;
-	font-size: 0.75em;
-	line-height: 1.3em;
-}
-
-#grapevine_ad {
-	padding-bottom: 20px;
 }

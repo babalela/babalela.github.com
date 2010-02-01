@@ -4,13 +4,5 @@ layout: base
 title: "- Thoughts on freelancing and small business in Zambia."
 ---
 
-{% for post in site.posts limit: 7 %}
-	<div class="post">
-		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		<span class="author">{{ post.author }}</span> on <span class="date">{{ post.date | date: "%d %B %Y" }}</span><br />
-		<br />
-		<br />
-	
-	  {{ post.content }}
-	</div><!-- /post -->
-{% endfor %}
+<h1><a href="/" title="Babalela - {{ site.tag_line }}"><span>Babalela</span></a></h1>	
+<p>&hellip; a Silozi word that means "to take care of".</p>

@@ -2,41 +2,44 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<title>{{ page.title }} &isin; {{ site.site_name }}</title>
- 
+
 		<link rel="shortcut icon" href="/favicon.ico" />
- 
+
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="robots" content="index, follow" />
 		<meta name="keywords" content="{{ page.keywords }}" />
 		<meta name="description" content="{{ page.description }}" />
 		<meta name="author" content="{{ site.site_name }}" />
- 
+
 		<link href="http://feeds2.feedburner.com/{{ site.feed_name }}" rel="alternate" title="{{ site.site_name }}" type="application/atom+xml" />
- 
+
 		<link href="/stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="/stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css" /> 
+		<link href="/stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css" />
 	</head>
 	<body id="{{ page.xhtml_id }}">
-		{% include google_analytics.html %}
-		
-		{% include navigation.html %}
+		<div id="page">
+			{% include google_analytics.html %}
 
-		<div id="content">
-			<div class="post">
-				<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-				<span class="author">{{ page.author }}</span> on <span class="date">{{ page.date | date: "%d %B %Y" }}</span><br />
-				<br />			
-				<br />			
-				{{ content }}
+			{% include navigation.html %}
+
+			<div id="content">
+				<div class="post">
+					<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+					<span class="author">{{ page.author }}</span> on <span class="date">{{ page.date | date: "%d %B %Y" }}</span><br />
+					<br />
+					<br />
+					{{ content }}
+				</div>
 			</div>
-		</div>
 
-		<div id="sidebar">
-			{% include grapevine.html %}
+			<div id="sidebar">
+				{% include grapevine.html %}
 
-			<br />
-			
-			{% include twitter.html %}
-		</div>		
-	</body>
+				<br />
+
+				{% include twitter.html %}
+			</div>
+			<br class="clear"/>
+		</div><!-- /page -->
+</body>
 </html>

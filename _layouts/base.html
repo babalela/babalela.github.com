@@ -17,21 +17,8 @@
 		<link href="/stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css" /> 
 	</head>
 	<body id="{{ page.xhtml_id }}">
-		{% include google_analytics.html %}
-		
-		{% include navigation.html %}
-
-		<div id="content">
+		<div id="page">
 			{{ content }}
-		</div>
-
-		<div id="sidebar">
-			{% include grapevine.html %}
-
-			<br />
-			
-			{% include twitter.html %}
-		</div>		
-		
+		</div><!-- /page -->
 	</body>
 </html>
