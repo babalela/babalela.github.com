@@ -49,8 +49,12 @@ h2 {
 
 #sidebar {
 	float: left;
-	width: 160px;
+	width: 202px;
 	padding: 20px;
 	font-size: 0.75em;
 	line-height: 1.3em;
+}
+
+#grapevine_ad {
+	padding-bottom: 20px;
 }
