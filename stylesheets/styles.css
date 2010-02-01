@@ -1,51 +1,39 @@
 body {
-	background: #003e85 url(../images/background.png) repeat;
-	color: #cccccc;
+	color: #666666;
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	line-height: 1.3em;
+	margin: 0;
+	border: 0;
+	padding: 0;
 }
 
 a {
-	color: #b7ff4e;
+	color: #007cff;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #fcff4a;
+	background-color: #fcff4a;
+}
+
+
+h1 {
+	font-size: 4em;
+	line-height: 1.3em;
 }
 
 h2 {
-	font: italic bold 2.3em Candara, Georgia, serif;
+	font-size: 2.5em;
+	line-height: 1.3em;
 }
 
 .grapevine_credit {
 	font-size: smaller;
 }
 
-.post h2 {
-	color: #35ccff;
-}
-
 #navigation {
-	padding: 20px;
 	float: left;
-	width: 269px;
-}
-
-#navigation h1 {
-	background-image: url(../images/babalela.png);
-	width: 269px;
-	height: 64px;
-}
-
-#navigation h1 a {
-	width: 315px;
-	height: 108px;
-	display: block;
-}
-
-#navigation h1 a span {
-	display: none;
+	width: 300px;
 }
 
 #content {
@@ -65,12 +53,4 @@ h2 {
 	padding: 20px;
 	font-size: 0.75em;
 	line-height: 1.3em;
-}
-
-#sidebar a {
-	color: #35ccff;
-}
-
-#sidebar a:hover {
-	text-decoration: underline;
 }
