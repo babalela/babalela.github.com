@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>{{ site.site_name }} | {{ page.title }}</title>
+ 
+		<link rel="shortcut icon" href="/favicon.ico" />
+ 
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="index, follow" />
+		<meta name="keywords" content="{{ page.keywords }}" />
+		<meta name="description" content="{{ page.description }}" />
+		<meta name="author" content="{{ site.site_name }}" />
+ 
+		<link href="http://feeds2.feedburner.com/{{ site.feed_name }}" rel="alternate" title="{{ site.site_name }}" type="application/atom+xml" />
+ 
+		<link href="/stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css" /> 
+	</head>
+	<body id="{{ page.xhtml_id }}">
+		{% include google_analytics.html %}
+		<div id="page">
+
+			<h1>{{ page.title }}</h1>	
+
+			<br />
+
+			<p>
+				Hello {{ page.invitee }},<br />
+				Thank you for taking the time to consider my proposal.<br />
+			</p>
+
+			<p>
+				Here is an introductory PDF for you to download.<br />
+			</p>
+			
+			<p><a href="/pdfs/invitation/{{ page.download_link}}"><img src="/images/invitation/{{ page.download_cover }}" title="Click to download [{{ page.download_size}}]" alt="Click to download [{{ page.download_size}}]" /></a></p>
+
+			<p>
+				Best!<br />
+				Silumesii Maboshe<br />
+				<strong>Babalela Investments</strong><br />
+			</p>
+
+		</div><!-- /page -->
+	</body>
+</html>
